@@ -1,0 +1,30 @@
+```
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>简易计数器</title>
+    <style>
+        body{text-align:center;margin-top:100px;font-size:24px;}
+        button{padding:10px 20px;margin:0 8px;font-size:20px;cursor:pointer;}
+    </style>
+</head>
+<body>
+    <p>当前计数：<span id="num">0</span></p>
+    <button onclick="add()">+1</button>
+    <button onclick="reset()">重置</button>
+    <script>
+        let count = 0;
+        function add(){
+            count++;
+            document.getElementById('num').innerText = count;
+        }
+        function reset(){
+            count = 0;
+            document.getElementById('num').innerText = count;
+        }
+    </script>
+</body>
+</html>
+
+```
